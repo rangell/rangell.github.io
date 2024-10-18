@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Rico Angell</title>
+	
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/nivo-lightbox.css" rel="stylesheet" />
+	<link href="css/nivo-lightbox-theme/default/default.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+
+	<!-- template skin -->
+	<link id="t-colors" href="color/default.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+
+
+<div id="wrapper">
+	
+    <nav class="navbar navbar-custom" role="navigation">
+        <div class="container navigation">
+		
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+			  <ul class="nav navbar-nav">
+				<li><div id="cart"></div></li>
+				<li class="active"><a href="#intro">Home</a></li>
+				<li class="active"><a href="files/rangell-cv.pdf">CV</a></li>
+				<li class="active"><a href="#pubs">Publications</a></li>
+				<li class="active"><a href="#contact">Contact</a></li>
+			  </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </nav>
+	
+	<!-- Section: intro -->
+    <section id="intro" class="intro">
+		<div class="intro-content">
+			<div class="container">
+				
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+					<div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+						<img src="img/headshot_22.png" class="img-responsive" alt="" />
+
+					</div>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 slogan">
+						<div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+						<h2>Rico Angell</h2>
+						<p>
+                        I am a final-year PhD candidate in computer science at University of Massachusetts Amherst
+                        working with
+                        <a href="http://people.cs.umass.edu/~mccallum/">Andrew McCallum</a>
+			on machine learning and natural language processing. My research interests include machine learning, optimization, and human-centered artificial intelligence with an increasing focus on AI safety and alignment.  I have been generously supported by the <a href="https://www.nsfgrfp.org">
+				NSF Graduate Research Fellowship</a> and the <a href="https://www.umass.edu/graduate/office-inclusion-engagement/spaulding-smith-fellowship">Spaulding-Smith Fellowship</a> during my PhD. My CV can be found <a href="files/rangell-cv.pdf">here</a>.
+			
+			</p>
+                        <p>
+                        I completed my undergraduate degree at University of Michigan in Ann Arbor
+                        in computer science and engineering with a minor in math.
+                        I worked with 
+                        <a href="http://andrewdeorio.com/">Andrew DeOrio</a>
+                        applying machine learning to hardware verification and
+                        <a href="https://web.eecs.umich.edu/~schoeneb/">Grant Schoenebeck</a>
+                        on a heuristic for the influence maximization problem.
+                        </p>
+
+                        <p>
+                        I have completed interships at Google Research, the Chan-Zuckerberg Initiative, and MIT Lincoln Labratory.
+			</p>
+
+			<p><b> I am actively seeking a postdoc with a focus on AI safety and alignment. </b></p>
+					</div>					
+				</div>		
+			</div>
+		</div>		
+    </section>
+
+
+	<section id="interests" class="home-section paddingtop-10">	
+           <div class="container">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="callaction">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="wow fadeInUp" data-wow-delay="0.1s">
+		<div class="cta-text">
+		<h3>Research Interests</h3>
+		<p><b>Scalable Machine Learning and Optimization:</b>  My thesis research has yielded a new algorithm for solving general semidefinite programs that scales practically and efficiently to massive problem sizes (e.g. 10<sup>13</sup> decision variables)––provably finding optimal solutions, demonstrated on multiple benchmarks to run over 500x faster than previous state-of-the-art (<a href="https://arxiv.org/pdf/2312.11801.pdf">arXiv ‘23</a>). The approach combines a novel spectral bundle method with matrix sketching techniques implemented in standalone JAX . I have also worked on leveraging approximate matrix decomposition techniques to improve the scalability of nearest neighbor search in a non-metric similarity space parameterized by a cross-encoder LLM (<a href="https://arxiv.org/pdf/2210.12579.pdf">EMNLP ‘22</a>).</p>
+
+		<p><b>Clustering with Application to Entity Resolution:</b> I have developed novel training and inference procedures for large-scale clustering, driven by applications to entity linking and entity resolution, central tasks in automated knowledge base construction. This research yielded two novel clustering methods operating jointly on both mention-mention and mention-entity affinities from a specially-trained LLM (<a href="https://aclanthology.org/2021.naacl-main.205.pdf">NAACL ‘21</a>, <a href="https://aclanthology.org/2022.naacl-main.343.pdf">NAACL ‘22</a>). I have also developed inference algorithms based on combinatorial optimization for incorporating novel human-in-the-loop feedback into entity resolution decisions (<a href="https://proceedings.mlr.press/v162/angell22a/angell22a.pdf">ICML ‘22</a>).</p>
+
+		<p><b>Fairness Testing:</b> I have developed multiple tools that  support  machine learning practitioners’ ability to test a model’s fairness towards a protected group or attribute. The first computes causal discrimination scores based on counterfactuals (<a href="https://dl.acm.org/doi/pdf/10.1145/3236024.3264590">ECSE/FSE ‘18</a>).  The second allows a user to view the Pareto frontier trading off performance and fairness metrics (<a href="https://arxiv.org/pdf/2012.09951.pdf">EJDP ‘23</a>).</p>
+
+		<p><b>AI Safety and Alignment:</b> I am now transitioning my research squarely into AI safety and alignment. I am particularly interested in developing and scaling interpretability techniques with the end goal of evaluating and auditing AI systems. As part of my thesis work, I am leveraging my fast and scalable semidefinite programming algorithm to improve sparse dictionary learning used for decomposing neural representations in superposition.</p> 	
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+            </div>
+	</section>	
+	
+	<section id="pubs" class="home-section paddingtop-10">	
+           <div class="container">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="callaction">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="wow fadeInUp" data-wow-delay="0.1s">
+		<div class="cta-text">
+		<h3>Publications</h3>
+			<p>
+			<b>Fast, Scalable, Warm-Start Semidefinite Programming with Spectral Bundling and Sketching</b> <a href="https://arxiv.org/pdf/2312.11801.pdf">[pdf]</a> <a href="https://github.com/rangell/specbm">[code]</a> <br/>
+			<u>Rico Angell</u>, Andrew McCallum<br/>
+			<i>To appear ICML 2024</i><br/>
+			</p>
+			<p>
+			<b>Fairkit, Fairkit, on the Wall, Who’s the Fairest of Them All? Supporting Data Scientists in Training Fair Models</b> <a href="https://arxiv.org/pdf/2012.09951.pdf">[pdf]</a> <br/>
+			Brittany Johnson, Jesse Bartola, <u>Rico Angell</u>, Katherine Keith, Sam Witty, Stephen J Giguere, Yuriy Brun.<br/>
+			<i>EURO Journal of Decision Processes, 2023</i><br/>
+		       </p>
+			<p>
+			<b>Efficient Nearest Neighbor Search for Cross-Encoder Models using Matrix Factorization</b> <a href="https://arxiv.org/pdf/2210.12579.pdf">[pdf]</a> <a href="https://github.com/iesl/anncur">[code]</a> <br/>
+			Nishant Yadav, Nicholas Monath, <u>Rico Angell</u>, Manzil Zaheer, Andrew McCallum<br/>
+			<i>EMNLP 2022</i><br/>
+			</p>
+			<p>
+			<b>Entity Linking via Explicit Mention-Mention Coreference Modeling</b> <a href="https://aclanthology.org/2022.naacl-main.343.pdf">[pdf]</a> <a href="https://github.com/dhdhagar/arboEL">[code]</a> <br/>
+			Dhruv Agarwal, <u>Rico Angell</u>, Nicholas Monath, Andrew McCallum<br/>
+			<i>NAACL 2022</i><br/>
+		       </p>
+			<p>
+			<b>Interactive Correlation Clustering with Existential Cluster Constraints</b> <a href="https://proceedings.mlr.press/v162/angell22a/angell22a.pdf">[pdf]</a> <a href="https://github.com/rangell/ecc">[code]</a><br/>
+			<u>Rico Angell</u>, Nicholas Monath, Nishant Yadav, Andrew McCallum<br/>
+			<i>ICML 2022</i><br/>
+			<p>
+			<b>Event and Entity Coreference using Trees to Encode Uncertainty in Joint Decisions</b> <a href="https://aclanthology.org/2021.crac-1.11.pdf">[pdf]</a><br/>
+			Nicholas Monath, Nishant Yadav, <u>Rico Angell</u>, Andrew McCallum<br/>
+			<i>EMNLP/CRAC 2021</i><br/>
+		       </p>
+			<p>
+			<b>Clustering-based Inference for Biomedical Entity Linking</b> <a href="https://aclanthology.org/2021.naacl-main.205.pdf">[pdf]</a> <a href="https://github.com/dhdhagar/arboEL">[code]</a> <br/>
+			<u>Rico Angell</u>, Nicholas Monath, Sunil Mohan, Nishant Yadav, Andrew McCallum<br/>
+			<i>NAACL 2021</i><br/>
+		       </p>
+			<p>
+			<b>Low Resource Recognition and Linking of Biomedical Concepts from a Large
+  Ontology</b> <a href="https://arxiv.org/pdf/2101.10587.pdf">[pdf]</a><br/>
+			Sunil Mohan, <u>Rico Angell</u>, Nick Monath, Andrew McCallum<br/>
+			<i>BCB 2021</i><br/>
+		       </p>
+			<p>
+			<b>Relation-Dependent Sampling for Multi-Relational Link Prediction</b> <a href="https://grlplus.github.io/papers/74.pdf">[pdf]</a><br/>
+			Arthur Feeney*, Rishabh Gupta*, Veronika Thost, <u>Rico Angell</u>, Gayathri Chandu, Yash Adhikari and Tengfei Ma <br/>
+			<i>ICML 2020 Workshop on Graph Representation Learning and Beyond (GRL+)</i><br/>
+		       </p>
+			<p>
+			<b>Inferring Latent Velocities from Weather Radar Data using Gaussian Processes</b> <a href="https://proceedings.neurips.cc/paper/2018/file/23451391cd1399019fa0421129066bc6-Paper.pdf">[pdf]</a><br/>
+			<u>Rico Angell</u> and Daniel Sheldon <br/>
+			<i>Conference on Neural Information Processing Systems (NeurIPS) 2018</i><br/>
+		       </p>
+			<p>
+			<b>Themis: Automatically Testing Software for Discrimination</b> <a href="https://dl.acm.org/doi/pdf/10.1145/3236024.3264590">[pdf]</a><br/>
+			<u>Rico Angell</u>, Brittany Johnson, Yuriy Brun and Alexandra Meliou <br/>
+			<i>Joint European Software Engineering Conference and Symposium
+				on the Foundations of Software Engineering (ESEC/FSE) 2018</i></br>
+		       </p>
+			<p>
+			<b>Don’t Be Greedy: Leveraging Community Structure to Find High Quality Seed Sets for Influence Maximization</b> <a href="https://arxiv.org/pdf/1609.06520.pdf">[pdf]</a></br>
+			<u>Rico Angell</u> and Grant Schoenebeck </br>
+			<i>International Conference on Web and Internet Economics (WINE) 2017</i></br>
+		       </p>
+		       <p>
+		       <b>A Topological Approach to Hardware Bug Triage</b> <a href="https://andrewdeorio.com/research/assets/MTV15.pdf">[pdf]</a></br>
+		       <u>Rico Angell</u>, Ben Oztalay, Andrew DeOrio </br>
+			<i>Microprocessor and SOC Test and Verification (MTV) 2015</i></br>
+			<br/>
+       </p>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+	</section>	
+
+	<section id="mentoring" class="home-section paddingtop-10">	
+           <div class="container">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="callaction">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="wow fadeInUp" data-wow-delay="0.1s">
+		<div class="cta-text">
+		<h3>Mentoring</h3>
+		<h6>Independent Studies</h6>
+		<ul style="margin-top:-30px;">
+			<li>Dhruv Agarwal (MS -> PhD, Spring 2021-Present) - Clustering for Entity Resolution</li>
+			<li>Sriharsha Hatwar (MS, Spring 2023) - Modeling Uncertainty of Human Feedback for Entity Resolution</li>
+			<li>Aneri Rana (Spring 2023) - Modeling Uncertainty of Human Feedback for Entity Resolution</li>
+			<li>Haritha Ananthakrishna (MS, Fall 2022)  - Scalable Semidefinite Programming</li>
+			<li>Pragya Prakash (MS, Fall 2022) - End-to-end Supervised Correlation Clustering</li>
+			<li>Manay Patel (Undergrad, Fall 2021) - Entity Resolution for Patent Author Disambiguation</li>
+			<li>Shubham Shetty (MS, Fall 2021) - Lifelong Entity Linking and Discovery</li>
+			<li>Ronald Soeh (MS, Spring 2021) - Efficiently Updating Nearest Neighbor Indices During Model Training</li>
+			<li>Matt Pearce (Undergrad, Fall 2020) - Visualization of Discovered Biomedical Entities and Concepts</li>
+		</ul>
+		</br>
+
+		<h6>COMPSCI 696DS, Industry Mentorship Program Projects</h6>
+		<ul style="margin-top:-30px;">
+			<li>Vijayalakshmi Vasudevan, Rishabh  Garg, Sriharsha Hatwar (Spring 2024) - Investigations in Compressed Context Windows</li>
+			<li>Aditya Kuppa, Alexandra Burushkina, Yugantar Prakash (Spring 2023) - A Unified Natural Language Understanding Re-ranker with Deep Reinforcement Learning</li>
+			<li>Ruei-Yao Sun, Nilesh Khade (Spring 2021) - Non-Gradient Based Adversarial Attack and Defense for Sequence Labeling</li>
+			<li>Arthur Feeney, Yash Adhikari, Gayathri Chandu, Rishabh Gupta (Spring 2020) - Using Graph Neural Networks for Drug-Drug Interaction Detection</li>
+		</ul>
+		
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+            </div>
+	</section>	
+
+	<section id="teaching" class="home-section paddingtop-10">	
+           <div class="container">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="callaction">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="wow fadeInUp" data-wow-delay="0.1s">
+		<div class="cta-text">
+		<h3>Teaching</h3>
+
+		<ul style="margin-top:0px;">
+			<li> COMPSCI 696DS (University of Massachusetts Amherst) - Industry Mentorship Program - Lead TA - Spring 2022</li>
+			<li> COMPSCI 696DS (University of Massachusetts Amherst) - Industry Mentorship Program - Spring 2021</li>
+			<li> EECS 280 (University of Michigan) - Programming and Introductory Data Structures - Winter 2015</li>
+		</ul>
+		
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+            </div>
+	</section>	
+
+
+	<section id="additional" class="home-section paddingtop-10">	
+           <div class="container">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="callaction">
+		<div class="row">
+		<div class="col-md-16">
+		<div class="wow fadeInUp" data-wow-delay="0.1s">
+		<div class="cta-text">
+		<h3>Additional Interests</h3>
+		Outside of work, I enjoy skiing, hiking, and training Brazilian jiu-jitsu (I am a purple belt under John Clarke in the Carlson Gracie lineage). 
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+            </div>
+	</section>	
+
+	<section id="contact" class="home-section paddingtop-10">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-16">
+						<div class="callaction">
+							<div class="row">
+								<div class="col-md-16">
+									<div class="wow fadeInUp" data-wow-delay="0.1s">
+									<div class="cta-text">
+									<h3>Contact</h3>
+                                    <p>rangell [at] cs [dot] umass [dot] edu<br/>
+                                    <a href="https://www.linkedin.com/in/rico-angell-4b09608a/">LinkedIn</a><br/>
+                                    <br/>
+                                    College of Information and Computer Science<br/>
+                                    University of Massachusetts<br/>
+                                    140 Governors Dr<br/>
+                                    Amherst, MA 01002
+                                       </p>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+	</section>	
+
+
+
+	<footer>
+	
+
+		<div class="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="wow fadeInLeft" data-wow-delay="0.1s">
+					<div class="text-left">
+					<p>&copy;Copyright 2017-Present Rico Angell.</p>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-6">
+					<div class="wow fadeInRight" data-wow-delay="0.1s">
+					<div class="text-right margintop-30">
+						<p>Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+                        <!-- 
+                            All links in the footer should remain intact. 
+                            Licenseing information is available at: http://bootstraptaste.com/license/
+                            You can buy this theme without footer links online at: http://bootstraptaste.com/buy/?theme=Appland
+                        -->
+					</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		</div>
+	</footer>
+
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+	<!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>	 
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/nivo-lightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>
