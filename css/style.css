@@ -161,7 +161,7 @@ a:focus {
 
 /* unvisited link */
 a:link {
-	color: red;
+	color: #4ACCD1;
   }
   
   /* visited link */
@@ -171,7 +171,7 @@ a:link {
   
   /* mouse over link */
   a:hover {
-	color: hotpink;
+	text-decoration: underline;
   }
   
   /* selected link */
